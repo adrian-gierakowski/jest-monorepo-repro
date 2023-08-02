@@ -1,0 +1,20 @@
+{
+  // see: https://www.npmjs.com/package/@tsconfig/node16-strictest
+  "extends": [
+    "@tsconfig/strictest/tsconfig",
+    "@tsconfig/node18/tsconfig"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "nodenext",
+    "module": "NodeNext",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "composite": true,
+    "rootDir": ".",
+  },
+  "references": [
+    { "path": "../two/tsconfig.json" }
+  ]
+}
